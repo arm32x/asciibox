@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+cd 'bin/'
+ninja
+
+if [ "$1" == 'run' ]; then
+    printf "\n"
+    shift
+    cd '../'
+    ./bin/asciibox $@
+    cd 'bin/'
+fi
+
+cd '../'
+
