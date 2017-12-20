@@ -1,7 +1,6 @@
 #pragma once
 
 #include <cctype>
-#include <cstdio>
 #include <fstream>
 #include <iostream>
 #include <limits>
