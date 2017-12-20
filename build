@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 cd 'bin/'
-ninja
+ninja || { cd '../'; exit 1; }
 
 if [ "$1" == 'run' ]; then
     printf "\n"
